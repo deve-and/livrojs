@@ -18,7 +18,7 @@
     ></script>
   </head>
   <body>
-    <div class="container col-6 p-5">
+    <div class="container mt-5">
       <div class="alert alert-info mb-3">
         <h3>Exercício A</h3>
         <p class="lead">
@@ -28,28 +28,34 @@
       </div>
       <h1 class="display-6 text-center">Programa Par ou ímpar</h1>
       <hr />
-      <img
-        src="img/exerc.jpg"
-        alt="Ilustração de um notebook"
-        class="float-start rounded w-25"
-      />
-      <form>
-        <div class="mb-3 col-4 mx-auto">
-          <label class="form-label">Número:</label>
-          <input
-            type="number"
-            class="form-control"
-            id="inNumero"
-            min="0"
-            step="0"
-            required
+      <div class="row">
+        <div class="col-md-6">
+          <img
+            src="img/exerc.jpg"
+            alt="Ilustração de um notebook"
+            class="img-fluid w-75"
           />
         </div>
-        <div class="mb-3 col-4 mx-auto">
-          <button class="btn btn-primary" type="submit">Verificar</button>
+        <div class="col-md-6">
+          <form>
+            <div class="mb-3">
+              <label class="form-label">Número:</label>
+              <input
+                type="number"
+                class="form-control"
+                id="inNumero"
+                min="0"
+                step="0"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <button class="btn btn-primary" type="submit">Verificar</button>
+            </div>
+          </form>
+          <h4></h4>
         </div>
-      </form>
-      <h4 class="col-4 mx-auto"></h4>
+      </div>
     </div>
     <script src="js/resp4_a.js"></script>
   </body>
