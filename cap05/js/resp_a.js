@@ -6,12 +6,12 @@ frm.addEventListener("submit", (e) => {
 
     const fruta = frm.inFruta.value
     const num = Number(frm.inNumero.value)
-    const resposta = ""
+    let resposta = ""
 
-    for (let i = 0; i <= num; i++) {
+    for (let i = 1; i <= num; i++) {
         if (i % 2 == 0) {
-            resposta 
+            resposta  = resposta + fruta + " * " ;
         }
     }
-    resp.inne
+    resp.innerText = resposta + fruta;  
 })
